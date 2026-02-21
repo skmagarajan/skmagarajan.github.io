@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pickleball Portfolio - Wireframe/Mockup</title>
+    <title>Saravana Krishnan Magarajan Portfolio</title>
+    
+    <!-- Pickleball Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
     <style>
         * {
             margin: 0;
@@ -21,7 +27,7 @@
             position: relative;
         }
 
-        /* Starry Background */
+        /* Star Wars Style Starfield Background */
         body::before {
             content: '';
             position: fixed;
@@ -29,37 +35,95 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
-                radial-gradient(2px 2px at 20% 30%, white, transparent),
-                radial-gradient(2px 2px at 60% 70%, white, transparent),
-                radial-gradient(1px 1px at 50% 50%, white, transparent),
-                radial-gradient(1px 1px at 80% 10%, white, transparent),
-                radial-gradient(2px 2px at 90% 60%, white, transparent),
-                radial-gradient(1px 1px at 33% 85%, white, transparent),
-                radial-gradient(1px 1px at 15% 15%, white, transparent),
-                radial-gradient(2px 2px at 70% 40%, white, transparent),
-                radial-gradient(1px 1px at 25% 60%, white, transparent),
-                radial-gradient(1px 1px at 85% 85%, white, transparent),
-                radial-gradient(1px 1px at 45% 20%, white, transparent),
-                radial-gradient(2px 2px at 10% 80%, white, transparent),
-                radial-gradient(1px 1px at 95% 35%, white, transparent),
-                radial-gradient(1px 1px at 40% 90%, white, transparent),
-                radial-gradient(2px 2px at 5% 45%, white, transparent);
-            background-size: 200% 200%;
-            background-position: 0% 0%;
-            animation: twinkle 8s ease-in-out infinite;
+            background: #000000;
             pointer-events: none;
             z-index: 0;
-            opacity: 0.6;
         }
 
-        @keyframes twinkle {
-            0%, 100% {
-                opacity: 0.6;
-            }
-            50% {
-                opacity: 0.8;
-            }
+        /* Multiple layers of stars */
+        .stars, .stars2, .stars3 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .stars {
+            background: transparent;
+            box-shadow: 
+                10px 10px #FFF, 50px 80px #FFF, 150px 30px #FFF, 200px 120px #FFF,
+                300px 50px #FFF, 400px 180px #FFF, 500px 90px #FFF, 600px 200px #FFF,
+                700px 40px #FFF, 800px 160px #FFF, 900px 70px #FFF, 1000px 190px #FFF,
+                1100px 100px #FFF, 1200px 20px #FFF, 1300px 150px #FFF, 1400px 60px #FFF,
+                100px 200px #FFF, 250px 100px #FFF, 350px 250px #FFF, 450px 150px #FFF,
+                550px 300px #FFF, 650px 50px #FFF, 750px 220px #FFF, 850px 130px #FFF,
+                950px 280px #FFF, 1050px 170px #FFF, 1150px 320px #FFF, 1250px 90px #FFF,
+                80px 350px #FFF, 180px 280px #FFF, 280px 180px #FFF, 380px 330px #FFF,
+                480px 240px #FFF, 580px 380px #FFF, 680px 140px #FFF, 780px 290px #FFF,
+                880px 190px #FFF, 980px 340px #FFF, 1080px 250px #FFF, 1180px 390px #FFF,
+                30px 400px #FFF, 130px 320px #FFF, 230px 220px #FFF, 330px 370px #FFF,
+                430px 270px #FFF, 530px 420px #FFF, 630px 180px #FFF, 730px 330px #FFF,
+                120px 450px #FFF, 220px 360px #FFF, 320px 260px #FFF, 420px 410px #FFF,
+                520px 310px #FFF, 620px 460px #FFF, 720px 210px #FFF, 820px 370px #FFF;
+            width: 1px;
+            height: 1px;
+            animation: twinkle1 2s infinite ease-in-out;
+            z-index: 0;
+        }
+
+        .stars2 {
+            background: transparent;
+            box-shadow: 
+                60px 60px #FFF, 110px 140px #FFF, 210px 90px #FFF, 310px 180px #FFF,
+                410px 110px #FFF, 510px 240px #FFF, 610px 150px #FFF, 710px 270px #FFF,
+                810px 100px #FFF, 910px 230px #FFF, 1010px 130px #FFF, 1110px 260px #FFF,
+                160px 290px #FFF, 260px 190px #FFF, 360px 320px #FFF, 460px 220px #FFF,
+                560px 350px #FFF, 660px 120px #FFF, 760px 280px #FFF, 860px 170px #FFF,
+                40px 310px #FFF, 140px 210px #FFF, 240px 340px #FFF, 340px 240px #FFF,
+                440px 370px #FFF, 540px 160px #FFF, 640px 300px #FFF, 740px 200px #FFF,
+                90px 380px #FFF, 190px 270px #FFF, 290px 400px #FFF, 390px 290px #FFF,
+                490px 420px #FFF, 590px 200px #FFF, 690px 340px #FFF, 790px 230px #FFF,
+                15px 430px #FFF, 115px 330px #FFF, 215px 450px #FFF, 315px 340px #FFF,
+                415px 470px #FFF, 515px 250px #FFF, 615px 380px #FFF, 715px 280px #FFF,
+                70px 490px #FFF, 170px 390px #FFF, 270px 510px #FFF, 370px 400px #FFF;
+            width: 2px;
+            height: 2px;
+            animation: twinkle2 3s infinite ease-in-out;
+            z-index: 0;
+        }
+
+        .stars3 {
+            background: transparent;
+            box-shadow: 
+                35px 35px #FFF, 85px 105px #FFF, 185px 65px #FFF, 285px 145px #FFF,
+                385px 85px #FFF, 485px 205px #FFF, 585px 115px #FFF, 685px 235px #FFF,
+                125px 265px #FFF, 225px 165px #FFF, 325px 295px #FFF, 425px 195px #FFF,
+                525px 325px #FFF, 625px 95px #FFF, 725px 255px #FFF, 825px 155px #FFF,
+                65px 285px #FFF, 165px 185px #FFF, 265px 315px #FFF, 365px 215px #FFF,
+                465px 345px #FFF, 565px 135px #FFF, 665px 275px #FFF, 765px 175px #FFF,
+                105px 355px #FFF, 205px 245px #FFF, 305px 375px #FFF, 405px 265px #FFF,
+                505px 395px #FFF, 605px 175px #FFF, 705px 315px #FFF, 805px 205px #FFF;
+            width: 1px;
+            height: 1px;
+            animation: twinkle3 4s infinite ease-in-out;
+            z-index: 0;
+        }
+
+        @keyframes twinkle1 {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        @keyframes twinkle2 {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 0.2; }
+        }
+
+        @keyframes twinkle3 {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 0.1; }
         }
 
         /* Navigation */
@@ -312,13 +376,164 @@
         }
 
         .name-area h1 {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             color: #FFD700;
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            text-shadow: none;
             margin: 0;
             letter-spacing: 2px;
             line-height: 1.2;
             white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Rotating subtitle below name */
+        .rotating-subtitle {
+            font-size: 1.3rem;
+            color: #FFD700;
+            letter-spacing: 2px;
+            margin-top: 0.5rem;
+            height: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rotating-subtitle span {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            animation: rotateSubtitle 12s infinite;
+            white-space: nowrap;
+            top: 0;
+            left: 0;
+        }
+
+        .rotating-subtitle span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .rotating-subtitle span:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        .rotating-subtitle span:nth-child(3) {
+            animation-delay: 6s;
+        }
+
+        .rotating-subtitle span:nth-child(4) {
+            animation-delay: 9s;
+        }
+
+        @keyframes rotateSubtitle {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            20% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            25% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Rotating Text Animation */
+        .rotating-text {
+            font-size: 2.5rem;
+            color: #FFD700;
+            letter-spacing: 2px;
+            height: 3rem;
+            position: relative;
+            overflow: hidden;
+            font-weight: normal;
+        }
+
+        .rotating-text span {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            animation: rotateText 12s infinite;
+            white-space: nowrap;
+            top: 0;
+            left: 0;
+        }
+
+        .rotating-text span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .rotating-text span:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        .rotating-text span:nth-child(3) {
+            animation-delay: 6s;
+        }
+
+        .rotating-text span:nth-child(4) {
+            animation-delay: 9s;
+        }
+
+        @keyframes rotateText {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            20% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            25% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Responsive name sizing based on viewport */
+        @media (max-width: 1400px) {
+            .name-area h1 {
+                font-size: 2rem;
+            }
+
+            .rotating-subtitle {
+                font-size: 1.1rem;
+                height: 1.8rem;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .name-area h1 {
+                font-size: 1.7rem;
+            }
+
+            .rotating-subtitle {
+                font-size: 1rem;
+                height: 1.6rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .name-area h1 {
+                font-size: 1.5rem;
+            }
+
+            .rotating-subtitle {
+                font-size: 0.9rem;
+                height: 1.4rem;
+            }
         }
 
         /* Net Area - Unified single row */
@@ -798,6 +1013,45 @@
             border-radius: 20px;
             padding: 3rem;
             box-shadow: 0 0 50px rgba(255, 215, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Stars behind contact boxes */
+        .contact-scoreboard::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            box-shadow: 
+                30px 50px 1px 1px #FFF, 80px 120px 1px 1px #FFF, 150px 80px 1px 1px #FFF,
+                220px 160px 1px 1px #FFF, 290px 90px 1px 1px #FFF, 360px 180px 1px 1px #FFF,
+                60px 200px 1px 1px #FFF, 130px 40px 1px 1px #FFF, 200px 220px 1px 1px #FFF,
+                270px 130px 1px 1px #FFF, 340px 60px 1px 1px #FFF, 410px 240px 1px 1px #FFF,
+                90px 170px 1px 1px #FFF, 160px 110px 1px 1px #FFF, 230px 190px 1px 1px #FFF,
+                300px 70px 1px 1px #FFF, 370px 150px 1px 1px #FFF, 440px 210px 1px 1px #FFF,
+                50px 140px 2px 2px #FFF, 120px 90px 2px 2px #FFF, 190px 230px 2px 2px #FFF,
+                260px 100px 2px 2px #FFF, 330px 200px 2px 2px #FFF, 400px 130px 2px 2px #FFF,
+                70px 250px 1px 1px #FFF, 140px 160px 1px 1px #FFF, 210px 70px 1px 1px #FFF,
+                280px 210px 1px 1px #FFF, 350px 110px 1px 1px #FFF, 420px 180px 1px 1px #FFF,
+                100px 100px 1px 1px #FFF, 170px 200px 1px 1px #FFF, 240px 140px 1px 1px #FFF,
+                310px 50px 1px 1px #FFF, 380px 220px 1px 1px #FFF, 450px 90px 1px 1px #FFF;
+            animation: twinkleContact 3s infinite ease-in-out;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes twinkleContact {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 0.3; }
+        }
+
+        .contact-scoreboard > * {
+            position: relative;
+            z-index: 1;
         }
 
         .final-score {
@@ -888,8 +1142,14 @@
             }
 
             .name-area h1 {
-                font-size: 1.1rem;
+                font-size: 1.3rem;
                 letter-spacing: 1px;
+                max-width: 95%;
+            }
+
+            .rotating-subtitle {
+                font-size: 0.8rem;
+                height: 1.2rem;
             }
 
             .title-text {
@@ -930,8 +1190,14 @@
             }
 
             .name-area h1 {
-                font-size: 0.85rem;
+                font-size: 0.9rem;
                 letter-spacing: 0.5px;
+                max-width: 90%;
+            }
+
+            .rotating-subtitle {
+                font-size: 0.65rem;
+                height: 1rem;
             }
 
             .title-text {
@@ -1004,6 +1270,11 @@
     </style>
 </head>
 <body>
+    <!-- Star Wars Style Starfield Layers -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
     <!-- Navigation -->
     <nav>
         <button class="hamburger" id="hamburger">
@@ -1049,7 +1320,15 @@
 
                 <!-- Name Area - Full Width -->
                 <div class="court-zone name-area">
-                    <h1>SARAVANA KRISHNAN MAGARAJAN</h1>
+                    <div style="text-align: center;">
+                        <h1>SARAVANA KRISHNAN MAGARAJAN</h1>
+                        <div class="rotating-subtitle">
+                            <span>Full Stack Engineer</span>
+                            <span>Cloud Enthusiast</span>
+                            <span>Problem Solver</span>
+                            <span>Pickleball Lover</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Net Area - Unified (no center line) -->
@@ -1066,8 +1345,6 @@
 
                 <!-- Unified Title Row (4th row) with white bottom border -->
                 <div class="court-zone spacing-title-area">
-                    <div class="title-text">Software Engineer</div>
-                    <div class="title-text">Pickleball Lover</div>
                 </div>
 
                 <!-- Bottom Navigation - Where Action Happens (left) and Let's Connect (right) -->
@@ -1279,7 +1556,7 @@
     <!-- Skills Section - Service Line -->
     <section id="skills">
         <div class="section-header">
-            <h2>Service Line</h2>
+            <h2 style="color: #000000;">Service Line</h2>
             <span class="subtitle">⚡ Technical Arsenal</span>
         </div>
 
@@ -1502,6 +1779,18 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer Credit -->
+    <footer style="background: rgba(0, 0, 0, 0.9); padding: 2rem; text-align: center; border-top: 3px solid #FFD700; position: relative; z-index: 1;">
+        <p style="color: #FFD700; font-size: 1rem; font-style: italic; margin: 0; line-height: 1.6;">
+            ⚡ This entire portfolio was coded by <strong>Claude AI</strong> (who's basically a really obedient intern) 
+            <br>with masterful prompting by <strong>Saravana</strong> (the genius behind the genius). 
+            <br>No pickleballs were harmed in the making of this website. 🏓✨
+        </p>
+        <p style="color: #00FF00; font-size: 0.85rem; margin-top: 1rem;">
+            Built with: HTML, CSS, JavaScript & a lot of pickleball passion 💚
+        </p>
+    </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script>
