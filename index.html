@@ -50,66 +50,9 @@
             pointer-events: none;
         }
 
-        .stars {
-            background: transparent;
-            box-shadow: 
-                10px 10px #FFF, 50px 80px #FFF, 150px 30px #FFF, 200px 120px #FFF,
-                300px 50px #FFF, 400px 180px #FFF, 500px 90px #FFF, 600px 200px #FFF,
-                700px 40px #FFF, 800px 160px #FFF, 900px 70px #FFF, 1000px 190px #FFF,
-                1100px 100px #FFF, 1200px 20px #FFF, 1300px 150px #FFF, 1400px 60px #FFF,
-                100px 200px #FFF, 250px 100px #FFF, 350px 250px #FFF, 450px 150px #FFF,
-                550px 300px #FFF, 650px 50px #FFF, 750px 220px #FFF, 850px 130px #FFF,
-                950px 280px #FFF, 1050px 170px #FFF, 1150px 320px #FFF, 1250px 90px #FFF,
-                80px 350px #FFF, 180px 280px #FFF, 280px 180px #FFF, 380px 330px #FFF,
-                480px 240px #FFF, 580px 380px #FFF, 680px 140px #FFF, 780px 290px #FFF,
-                880px 190px #FFF, 980px 340px #FFF, 1080px 250px #FFF, 1180px 390px #FFF,
-                30px 400px #FFF, 130px 320px #FFF, 230px 220px #FFF, 330px 370px #FFF,
-                430px 270px #FFF, 530px 420px #FFF, 630px 180px #FFF, 730px 330px #FFF,
-                120px 450px #FFF, 220px 360px #FFF, 320px 260px #FFF, 420px 410px #FFF,
-                520px 310px #FFF, 620px 460px #FFF, 720px 210px #FFF, 820px 370px #FFF;
-            width: 1px;
-            height: 1px;
-            animation: twinkle1 2s infinite ease-in-out;
-            z-index: 0;
-        }
-
-        .stars2 {
-            background: transparent;
-            box-shadow: 
-                60px 60px #FFF, 110px 140px #FFF, 210px 90px #FFF, 310px 180px #FFF,
-                410px 110px #FFF, 510px 240px #FFF, 610px 150px #FFF, 710px 270px #FFF,
-                810px 100px #FFF, 910px 230px #FFF, 1010px 130px #FFF, 1110px 260px #FFF,
-                160px 290px #FFF, 260px 190px #FFF, 360px 320px #FFF, 460px 220px #FFF,
-                560px 350px #FFF, 660px 120px #FFF, 760px 280px #FFF, 860px 170px #FFF,
-                40px 310px #FFF, 140px 210px #FFF, 240px 340px #FFF, 340px 240px #FFF,
-                440px 370px #FFF, 540px 160px #FFF, 640px 300px #FFF, 740px 200px #FFF,
-                90px 380px #FFF, 190px 270px #FFF, 290px 400px #FFF, 390px 290px #FFF,
-                490px 420px #FFF, 590px 200px #FFF, 690px 340px #FFF, 790px 230px #FFF,
-                15px 430px #FFF, 115px 330px #FFF, 215px 450px #FFF, 315px 340px #FFF,
-                415px 470px #FFF, 515px 250px #FFF, 615px 380px #FFF, 715px 280px #FFF,
-                70px 490px #FFF, 170px 390px #FFF, 270px 510px #FFF, 370px 400px #FFF;
-            width: 2px;
-            height: 2px;
-            animation: twinkle2 3s infinite ease-in-out;
-            z-index: 0;
-        }
-
-        .stars3 {
-            background: transparent;
-            box-shadow: 
-                35px 35px #FFF, 85px 105px #FFF, 185px 65px #FFF, 285px 145px #FFF,
-                385px 85px #FFF, 485px 205px #FFF, 585px 115px #FFF, 685px 235px #FFF,
-                125px 265px #FFF, 225px 165px #FFF, 325px 295px #FFF, 425px 195px #FFF,
-                525px 325px #FFF, 625px 95px #FFF, 725px 255px #FFF, 825px 155px #FFF,
-                65px 285px #FFF, 165px 185px #FFF, 265px 315px #FFF, 365px 215px #FFF,
-                465px 345px #FFF, 565px 135px #FFF, 665px 275px #FFF, 765px 175px #FFF,
-                105px 355px #FFF, 205px 245px #FFF, 305px 375px #FFF, 405px 265px #FFF,
-                505px 395px #FFF, 605px 175px #FFF, 705px 315px #FFF, 805px 205px #FFF;
-            width: 1px;
-            height: 1px;
-            animation: twinkle3 4s infinite ease-in-out;
-            z-index: 0;
-        }
+        .stars { width: 1px; height: 1px; background: transparent; animation: twinkle1 2s infinite ease-in-out; z-index: 0; }
+        .stars2 { width: 2px; height: 2px; background: transparent; animation: twinkle2 3s infinite ease-in-out; z-index: 0; }
+        .stars3 { width: 1px; height: 1px; background: transparent; animation: twinkle3 4s infinite ease-in-out; z-index: 0; }
 
         @keyframes twinkle1 {
             0%, 100% { opacity: 1; }
@@ -1811,9 +1754,7 @@
     <!-- Footer Credit -->
     <footer style="background: rgba(0, 0, 0, 0.9); padding: 2rem; text-align: center; border-top: 3px solid #FFD700; position: relative; z-index: 1;">
         <p style="color: #FFD700; font-size: 1rem; font-style: italic; margin: 0; line-height: 1.6;">
-            ⚡ This entire portfolio was coded by <strong>Claude AI</strong> (who's basically a really obedient intern) 
-            <br>with masterful prompting by <strong>Saravana</strong> (the genius behind the genius). 
-            <br>No pickleballs were harmed in the making of this website. 🏓✨
+            ⚡ Done using <strong>Claude Code</strong>
         </p>
         <p style="color: #00FF00; font-size: 0.85rem; margin-top: 1rem;">
             Built with: HTML, CSS, JavaScript & a lot of pickleball passion 💚
@@ -1822,6 +1763,21 @@
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script>
+        // Generate stars covering full viewport
+        function generateStars(selector, count) {
+            const el = document.querySelector(selector);
+            if (!el) return;
+            const w = window.screen.width;
+            const h = window.screen.height * 3;
+            const shadows = Array.from({ length: count }, () =>
+                `${Math.floor(Math.random() * w)}px ${Math.floor(Math.random() * h)}px #FFF`
+            ).join(', ');
+            el.style.boxShadow = shadows;
+        }
+        generateStars('.stars', 300);
+        generateStars('.stars2', 150);
+        generateStars('.stars3', 100);
+
         // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
