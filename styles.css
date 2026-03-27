@@ -1130,6 +1130,41 @@
                 padding: 1.5rem;
             }
 
+            /* Kitchen / About section */
+            .profile-image {
+                width: 140px;
+                height: 140px;
+            }
+
+            .profile-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.5rem;
+            }
+
+            .stat-box {
+                padding: 0.6rem 0.3rem;
+            }
+
+            .stat-box .number {
+                font-size: 1.4rem;
+            }
+
+            .stat-box .label {
+                font-size: 0.65rem;
+            }
+
+            .bio {
+                padding: 1.5rem;
+            }
+
+            .bio h4 {
+                font-size: 1.2rem;
+            }
+
         }
 
         @media (max-width: 480px) {
@@ -1200,6 +1235,37 @@
 
             .court-container {
                 width: 95%;
+            }
+
+            /* Kitchen / About section */
+            .stats {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 0.4rem;
+            }
+
+            .stat-box {
+                padding: 0.5rem 0.2rem;
+            }
+
+            .stat-box .number {
+                font-size: 1.2rem;
+            }
+
+            .stat-box .label {
+                font-size: 0.6rem;
+            }
+
+            .profile-card {
+                padding: 1.2rem;
+            }
+
+            .profile-image {
+                width: 110px;
+                height: 110px;
+            }
+
+            .bio {
+                padding: 1rem;
             }
         }
 
