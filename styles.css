@@ -318,6 +318,16 @@
             text-overflow: ellipsis;
         }
 
+        @media (max-width: 600px) {
+            .name-area h1 {
+                white-space: normal;
+                text-align: center;
+                word-break: break-word;
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+            }
+        }
+
         /* Rotating subtitle below name */
         .rotating-subtitle {
             font-size: 1.3rem;
@@ -334,7 +344,7 @@
             width: 100%;
             text-align: center;
             opacity: 0;
-            animation: rotateSubtitle 12s infinite;
+            animation: rotateSubtitle 6s infinite;
             white-space: nowrap;
             top: 0;
             left: 0;
@@ -346,14 +356,6 @@
 
         .rotating-subtitle span:nth-child(2) {
             animation-delay: 3s;
-        }
-
-        .rotating-subtitle span:nth-child(3) {
-            animation-delay: 6s;
-        }
-
-        .rotating-subtitle span:nth-child(4) {
-            animation-delay: 9s;
         }
 
         @keyframes rotateSubtitle {
@@ -1111,6 +1113,23 @@
             .net-post {
                 width: 8px;
             }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-court {
+                padding: 1.5rem;
+            }
+
+            .contact-scoreboard {
+                padding: 1.5rem;
+            }
+
         }
 
         @media (max-width: 480px) {
@@ -1170,7 +1189,6 @@
             nav li {
                 font-size: 0.85rem;
             }
-        }
 
             .court-zone {
                 padding: 0.5rem;
