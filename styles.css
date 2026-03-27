@@ -320,11 +320,9 @@
 
         @media (max-width: 600px) {
             .name-area h1 {
-                white-space: normal;
-                text-align: center;
-                word-break: break-word;
-                font-size: 1.1rem;
-                letter-spacing: 1px;
+                white-space: nowrap;
+                font-size: clamp(0.6rem, 3.6vw, 1.1rem);
+                letter-spacing: 0;
             }
         }
 
@@ -1174,9 +1172,9 @@
             }
 
             .name-area h1 {
-                font-size: 0.9rem;
-                letter-spacing: 0.5px;
-                max-width: 90%;
+                font-size: clamp(0.55rem, 3.6vw, 0.9rem);
+                letter-spacing: 0;
+                max-width: 100%;
             }
 
             .rotating-subtitle {
